@@ -1,0 +1,22 @@
+{
+    "name": "kex15i10/ukrposhta",
+    "description": "Client for ukrposhta API",
+    "type": "library",
+    "keywords": ["ukrposhta", "укр почта", "укр пошта"],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kex15i10/ukrposhta"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ukrposhta\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "php": "^7.0"
+    },
+    "minimum-stability": "dev"
+}
