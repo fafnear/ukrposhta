@@ -115,7 +115,7 @@ abstract class Request
 			$options['query'] = $query;
 		}
 
-		if ($method == 'POST' && $body = $this->getBody($params)) {
+		if (in_array($method, ['POST', 'PUT']) && $body = $this->getBody($params)) {
 			$options['body'] = $body;
 		}
 
