@@ -11,7 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 abstract class Request
 {
 	const ROOT_URL = null;
-	const REQUEST_URL = null;
+	const REQUEST_URL = '';
 
 	/**
 	 * @var Client
