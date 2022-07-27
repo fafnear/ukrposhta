@@ -70,9 +70,9 @@ $config = new Ukrposhta\Data\Configuration();
 $config->setBearer('string bearer'); 
 $config->setToken('string token');
 $cities = new Ukrposhta\Directory\City($config)->getList();
-$districts = Ukrposhta\Directory\District($config)->getList();
-$regions = Ukrposhta\Directory\Region($config)->getList();
-$streets = Ukrposhta\Directory\Street($config)->getList();
+$districts = new Ukrposhta\Directory\District($config)->getList();
+$regions = new Ukrposhta\Directory\Region($config)->getList();
+$streets = new Ukrposhta\Directory\Street($config)->getList();
 ```
 Для получения списка городов с фильтром по региону
 ```php
